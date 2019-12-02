@@ -63,7 +63,7 @@ jupyter notebook
 ```
 A Chrome tab will open, choose the folder where you what your notebook to stand and create a new Python 3 notebook:
 
-![Example image](docs/new_notebook.png)
+![Example image](docs/images/new_notebook.png)
 
 
 # Github
@@ -82,4 +82,4 @@ git clone https://github.com/desired_repo
 ```
 Note: the link to clone is available on the repository website:
 
-![Example image](docs/git_clone.png)
+![Example image](docs/images/git_clone.png)
