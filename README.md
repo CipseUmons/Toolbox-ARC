@@ -55,6 +55,7 @@ conda activate myenv
 Note: the text (myenv) should appear at the beginning of the new command line.
 
 ## 3. Launch Jupyter Notebook
+### /!\/!\/!\ Create kernel /!\/!\/!\
 A Jupyter Notebook is a notebook allowing you to write and run Python code easily using your conda environment.
 
 While your environment activated, launch a new notebook:
