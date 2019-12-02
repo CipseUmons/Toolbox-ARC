@@ -78,5 +78,8 @@ conda install -c anaconda git
 ```
 - Then, you can import whatever Github repository you want:
 ```
-git clone https/desired_repo
+git clone https://github.com/desired_repo
 ```
+Note: the link to clone is available on the repository website:
+
+![Example image](docs/git_clone.png)
