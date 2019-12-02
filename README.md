@@ -168,5 +168,5 @@ To import a dataset, you have to import the library able to read the file and sp
 FILE_PATH = "C:\Users\file_location"
 ```
 This path can be found on your file explorer:
-![Example image](docs/images/file_path)
+![Example image](docs/images/file_path/png)
 
