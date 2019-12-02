@@ -80,7 +80,7 @@ conda install -c anaconda git
 ```
 git clone https://github.com/desired_repo
 ```
-Note: the link to clone is available on the repository website:
+Note: the URL is available on the repository website:
 
 ![Example image](docs/images/git_clone_link.png)
 
@@ -107,4 +107,21 @@ git add .
 ```
 Note: don't forget the DOT in the command.
 
-- 
+- Commit the files (set them to be send online):
+```
+git commit -m "Message associated with the commit"
+```
+
+- Set the remote command (to manage the GitHub repository):
+```
+git remote add origin repository_URL
+git remote -v
+```
+Note: replace "repository_URL" by the URL found on GitHub
+
+![Example image](docs/images/git_clone_link.png)
+
+- Put the changes on GitHub (in the master branch):
+```
+git push origin master
+```
