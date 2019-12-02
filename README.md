@@ -25,7 +25,9 @@ conda activate myenv
 Note: the text (myenv) should appear at the beginning of the new command line.
 
 - Add the libraries you need by typing the corresponding command found in [Anaconda Cloud](https://anaconda.org/anaconda/repo).
+
 Tips: Choose "Anaconda/" option when available.
+
 Example with [scipy](https://anaconda.org/anaconda/scipy):
 ```
 conda install -c anaconda scipy
@@ -54,9 +56,11 @@ Note: the text (myenv) should appear at the beginning of the new command line.
 
 ## 3. Launch Jupyter Notebook
 A Jupyter Notebook is a notebook allowing you to write and run Python code easily using your conda environment.
+
 While your environment activated, launch a new notebook:
 ```
 jupyter notebook
 ```
 A Chrome tab will open, choose the folder where you what your notebook to stand and create a new Python 3 notebook:
+
 ![Example image](docs/new_notebook.png)
