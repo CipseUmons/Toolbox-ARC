@@ -168,5 +168,25 @@ To import a dataset, you have to import the library able to read the file and sp
 FILE_PATH = "C:\Users\file_location"
 ```
 This path can be found on your file explorer:
-![Example image](docs/images/file_path/png)
+![Example image](docs/images/file_path.png)
 
+Here is the example with an edf file for EEG data (compatible with mne library):
+```
+import mne
+FILE_PATH = "C:\Users\file_location\myfile.edf"
+data = mne.io.read_raw_edf(FILE_PATH)
+raw_data = data.get_data()
+```
+
+## Matrix
+Data in Python are considered as matrices, it is thus important to deal with this type of entity.
+
+The main library to work with matrices is "Numpy". This is some interesting commands to know (with the explaining as comment next to):
+```
+import numpy as np    #import Numpy library
+mat = np.array([[1,1,1],[2,2,2]])   #create a matrix called "mat" with 2 rows, 3 columns whose first row is "1 1 1" and second raw "2 2 2"
+my_row = mat(0,:)    #put the first row (indixed as 0) of "mat" inside "my_row" (the ":" means that we take all the columns of the desired line)
+my_column = mat(:,0)    #put the first column of "mat" inside "my_column"
+my_range = np.arange(10)    #Create an vector of 10 integers (from 0 to 9)
+my_custom_range = np.arange(3,11,2)   #Create a vector of integers from 3 to 11 by step of 2
+my_linear_vec = np.linspace(2,4,10)   #Create a vector of 10 numbers equally spaced from 2 to 10 
