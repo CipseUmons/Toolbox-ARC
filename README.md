@@ -55,14 +55,19 @@ conda activate myenv
 Note: the text (myenv) should appear at the beginning of the new command line.
 
 ## 3. Launch Jupyter Notebook
-### /!\/!\/!\ Create kernel /!\/!\/!\
 A Jupyter Notebook is a notebook allowing you to write and run Python code easily using your conda environment.
 
-While your environment activated, launch a new notebook:
+- While your environment activated, install jupyter library:
+```
+conda install -c anaconda jupyter
+```
+
+- Launch a new notebook:
 ```
 jupyter notebook
 ```
-A Chrome tab will open, choose the folder where you what your notebook to stand and create a new Python 3 notebook:
+
+- A Chrome tab will open, choose the folder where you want your notebook to stand and create a new Python 3 notebook:
 
 ![Example image](docs/images/new_notebook.png)
 
@@ -126,3 +131,42 @@ Note: replace "repository_URL" by the URL found on GitHub
 ```
 git push origin master
 ```
+
+# Python
+Here are some useful basic commands in Python.
+
+## Import a library
+To use a library you have installed on your environment, you have to import it in Python.
+
+For this tutorial, we will take the example of "Numpy" library which is used for matrices manipulation.
+
+- Simple importation:
+```
+import numpy
+```
+- It is also possible to rename it for easier usage:
+```
+import numpy as np
+```
+- You may want to import only a part of the library (here array is a function of Numpy library):
+```
+from numpy import array
+```
+
+## Comment
+- To add a comment, just add the symbol "#" at the beginning of the line (the shortcut ctrl+/ does the same wherever you are on the line)
+
+- To add a title, press "#" when you select the outline of an empty cell (when the selection appears in blue).
+
+Therefore, 3 # should appear in the cell and you can click inside to write your title.
+
+Note: you can add or delete the # to change the size of your title (the more # you introduce, the lower the size).
+
+## Import dataset
+To import a dataset, you have to import the library able to read the file and specify the absolute path of the file on your computer:
+```
+FILE_PATH = "C:\Users\file_location"
+```
+This path can be found on your file explorer:
+![Example image](docs/images/file_path)
+
