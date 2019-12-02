@@ -82,4 +82,4 @@ git clone https://github.com/desired_repo
 ```
 Note: the link to clone is available on the repository website:
 
-![Example image](docs/images/git_clone.png)
+![Example image](docs/images/git_clone_link.png)
