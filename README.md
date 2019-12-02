@@ -10,7 +10,7 @@ Follow the instructions of the .exe file.
 
 ## 2. Create environment
 ### a) From scratch
-- Open "Anaconda Prompt"
+- Open "Anaconda Prompt".
 
 - Create your environment with the last Python version:
 ```
@@ -36,7 +36,7 @@ conda install -c anaconda scipy
 ### b) From Yaml file
 - Download the Yaml file of the desired environment (desired_env.yml).
 
-- In the Anaconda Prompt, go to the corresponding location
+- In the Anaconda Prompt, go to the corresponding location.
 ```
 cd PATH_TO_YAML_FILE
 ```
@@ -66,20 +66,45 @@ A Chrome tab will open, choose the folder where you what your notebook to stand 
 ![Example image](docs/images/new_notebook.png)
 
 
-# Github
-Github is a platform to share codes.
+# GitHub
+GitHub is a platform to share codes.
 
-## Import a project
-Importing a project allows you to use a shared code in local.
+## Import a repository
+Importing a repository allows you to use a shared code in local.
 
-- The first time you use Github in your conda environment, you have to install the corresponding library:
+- The first time you use GitHub in your conda environment, you have to install the corresponding library:
 ```
 conda install -c anaconda git
 ```
-- Then, you can import whatever Github repository you want:
+- Then, you can import whatever GitHub repository you want:
 ```
 git clone https://github.com/desired_repo
 ```
 Note: the link to clone is available on the repository website:
 
 ![Example image](docs/images/git_clone_link.png)
+
+## Create a repository
+You can share your own code on GitHub to enhance collaborative work.
+
+- Create a [GitHub account](https://github.com/).
+
+- Create a new repository (do not initialize the new repository with README, license, or gitignore files).
+
+- Go to Anaconda Prompt, activate your environment, go to the local folder you want to share:
+```
+cd PATH_TO_FOLDER
+```
+
+- Initialize your local folder as a Git repository:
+```
+git init
+```
+
+- Add all the files locating in the current folder to the git repository you have just created:
+```
+git add .
+```
+Note: don't forget the DOT in the command.
+
+- 
