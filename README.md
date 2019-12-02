@@ -64,3 +64,19 @@ jupyter notebook
 A Chrome tab will open, choose the folder where you what your notebook to stand and create a new Python 3 notebook:
 
 ![Example image](docs/new_notebook.png)
+
+
+# Github
+Github is a platform to share codes.
+
+## Import a project
+Importing a project allows you to use a shared code in local.
+
+- The first time you use Github in your conda environment, you have to install the corresponding library:
+```
+conda install -c anaconda git
+```
+- Then, you can import whatever Github repository you want:
+```
+git clone https/desired_repo
+```
