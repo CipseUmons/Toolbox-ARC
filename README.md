@@ -205,6 +205,7 @@ from matplotlib import pyplot as plt
 ```
 plt.figure()
 plt.imshow(IMAGE_PATH)   #the path can be relative from current folder
+plt.show()
 ```
 Note: "plt.figure()" instanciate a window where the figure will be plotted. You have to write this commant each time you want to display a new figure without erasing the previous one.
 
