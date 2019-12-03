@@ -201,12 +201,13 @@ The reference library to plot figures in Python is Pyplot from Matplotlib. Here 
 ```
 from matplotlib import pyplot as plt
 ```
-- Plot a figure:
+- Plot an image:
 ```
 plt.figure()
-plt.plot(FIGURE_PATH)   #the path can be relative from current folder
-plt.show()
+plt.imshow(IMAGE_PATH)   #the path can be relative from current folder
 ```
+Note: "plt.figure()" instanciate a window where the figure will be plotted. You have to write this commant each time you want to display a new figure without erasing the previous one.
+
 - Plot a graph:
 ```
 plt.plot([x_coordinates],[y_coordinates])
