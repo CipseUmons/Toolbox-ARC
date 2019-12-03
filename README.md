@@ -190,3 +190,43 @@ my_column = mat(:,0)    #put the first column of "mat" inside "my_column"
 my_range = np.arange(10)    #Create an vector of 10 integers (from 0 to 9)
 my_custom_range = np.arange(3,11,2)   #Create a vector of integers from 3 to 11 by step of 2
 my_linear_vec = np.linspace(2,4,10)   #Create a vector of 10 numbers equally spaced from 2 to 10 
+```
+
+
+## Figure
+### Pyplot
+The reference library to plot figures in Python is Pyplot from Matplotlib.
+
+- Import the library:
+```
+from matplotlib import pyplot as plt
+```
+- Plot a figure:
+```
+plt.figure()
+plt.plot(FIGURE_PATH)   #the path can be relative from current folder
+plt.show()
+```
+- Plot a graph:
+```
+plt.plot([x_coordinates],[y_coordinates])
+plt.show()
+```
+Example:
+```
+plt.plot([1,2,3],[4,10,6])
+plt.show()
+```
+Note: plt.plot makes a linear interpolation between points.
+
+- Make a scatter plot (no link between points)
+```
+plt.scatter([x_coordinates],[y_coordinates])
+plt.show()
+```
+- Make a bar plot
+```
+plt.bar([x_coordinates],[y_coordinates])
+plt.show()
+```
+- Create subfigures (display several graphs on the same figure)
