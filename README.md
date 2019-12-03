@@ -195,7 +195,7 @@ my_linear_vec = np.linspace(2,4,10)   #Create a vector of 10 numbers equally spa
 
 ## Figure
 ### Pyplot
-The reference library to plot figures in Python is Pyplot from Matplotlib.
+The reference library to plot figures in Python is Pyplot from Matplotlib. Here are some basic functions.
 
 - Import the library:
 ```
@@ -230,3 +230,34 @@ plt.bar([x_coordinates],[y_coordinates])
 plt.show()
 ```
 - Create subfigures (display several graphs on the same figure)
+```
+fig, axes = plt.subplots(2, 1)    #the main figure is divided in 2 lines and 1 column -> (2,1)
+axes[0].plot([x_coordinates],[y_coordinates])   #linear plot on the first line
+axes[1].scatter([x_coordinates],[y_coordinates])    #scatter plot on the second line
+```
+
+### Seaborn
+Seaborn is a library of statistical visualization. Here are some basic functions.
+
+- Import the library and enable color code:
+```
+import seaborn as sns
+sns.set(color_codes=True)
+```
+- Plot histogram:
+```
+sns.displot(my_vector)
+```
+- Plot the approximated distribution:
+```
+sns.kdeplot(x, shade=True)
+```
+- Plot the joined distribution on x and y axis:
+```
+sns.jointplot(x=x_coordinates, y=y_coordinates)
+```
+- If you have a dataset (e.g. a csv file with a label on each columns), you can make a pairplot to compare the distributions of each features two by two:
+```
+my_data = sns.load_dataset("PATH_TO_DATASET")
+sns.pairplot(my_data)
+```
