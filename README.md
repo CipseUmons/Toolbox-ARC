@@ -40,7 +40,7 @@ conda install -c anaconda scipy
 ```
 cd PATH_TO_YAML_FILE
 ```
-Note, replace PATH_TO_YAML_FILE with the absolute path of the folder where the desired file is stored.
+Note: replace PATH_TO_YAML_FILE with the absolute path of the folder where the desired file is stored.
 
 - Import the environment:
 ```
